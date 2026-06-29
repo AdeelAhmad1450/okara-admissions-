@@ -51,3 +51,7 @@ def root():
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
+@app.get("/dashboard")
+def dashboard():
+    return {"status": "ok", "message": "Dashboard is working"}
